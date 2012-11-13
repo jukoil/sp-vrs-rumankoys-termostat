@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.atollic.truestudio.exe.debug.2033273424">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.atollic.truestudio.exe.debug.2033273424" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.atollic.truestudio.exe.debug.2033273424" name="Debug" parent="com.atollic.truestudio.exe.debug">
+					<folderInfo id="com.atollic.truestudio.exe.debug.2033273424." name="/" resourcePath="">
+						<toolChain id="com.atollic.truestudio.exe.debug.toolchain.1040963645" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.debug.toolchain">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.debug.toolchain.platform.311783392" isAbstract="false" name="Debug platform" superClass="com.atollic.truestudio.exe.debug.toolchain.platform"/>
+							<builder buildPath="${workspace_loc:/basic_project/Debug}" id="com.atollic.truestudio.mbs.builder1.807600748" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.atollic.truestudio.mbs.builder1"/>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.as.25362165" name="Assembler" superClass="com.atollic.truestudio.exe.debug.toolchain.as">
+								<option id="com.atollic.truestudio.common_options.target.endianess.383315540" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1588909992" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32L152RB" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1426647413" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.959357984" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.as.symbols.defined.944578055" name="Defined symbols" superClass="com.atollic.truestudio.as.symbols.defined"/>
+								<option id="com.atollic.truestudio.as.general.incpath.239224089" name="Include path" superClass="com.atollic.truestudio.as.general.incpath"/>
+								<inputType id="com.atollic.truestudio.as.input.483726675" name="Input" superClass="com.atollic.truestudio.as.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc">
+								<option id="com.atollic.truestudio.gcc.symbols.defined.1620575016" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32L1XX_MD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+								</option>
+								<option id="com.atollic.truestudio.gcc.directories.select.273193776" name="Include path" superClass="com.atollic.truestudio.gcc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="..\Libraries\STM32L1xx_StdPeriph_Driver\inc"/>
+									<listOptionValue builtIn="false" value="..\Libraries\CMSIS\CM3\CoreSupport"/>
+									<listOptionValue builtIn="false" value="..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx"/>
+									<listOptionValue builtIn="false" value="../inc/"/>
+									<listOptionValue builtIn="false" value="../mcu/inc/"/>
+									<listOptionValue builtIn="false" value="../src/"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.1532108471" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.942074645" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32L152RB" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1480524672" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1364276583" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_garbage.627395551" name="Prepare dead code removal" superClass="com.atollic.truestudio.gcc.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_data.1957318755" name="Prepare dead data removal" superClass="com.atollic.truestudio.gcc.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.common_options.target.interwork.1512673060" name="Mix ARM/Thumb" superClass="com.atollic.truestudio.common_options.target.interwork"/>
+								<inputType id="com.atollic.truestudio.gcc.input.80024303" superClass="com.atollic.truestudio.gcc.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.1971701161" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld">
+								<option id="com.atollic.truestudio.common_options.target.endianess.1696937188" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.104352782" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32L152RB" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1856924329" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.860378182" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.ld.general.scriptfile.1911271255" name="Linker script" superClass="com.atollic.truestudio.ld.general.scriptfile" value="..\stm32_flash.ld" valueType="string"/>
+								<option id="com.atollic.truestudio.ld.optimization.do_garbage.1947827435" name="Dead code removal" superClass="com.atollic.truestudio.ld.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ld.libraries.list.2063667353" name="Libraries" superClass="com.atollic.truestudio.ld.libraries.list" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+								</option>
+								<inputType id="com.atollic.truestudio.ld.input.303265798" name="Input" superClass="com.atollic.truestudio.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.gpp.629607689" name="C++ Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gpp">
+								<option id="com.atollic.truestudio.gpp.symbols.defined.829464453" name="Defined symbols" superClass="com.atollic.truestudio.gpp.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32L1XX_MD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+								</option>
+								<option id="com.atollic.truestudio.gpp.directories.select.539162201" name="Include path" superClass="com.atollic.truestudio.gpp.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="..\Libraries\STM32L1xx_StdPeriph_Driver\inc"/>
+									<listOptionValue builtIn="false" value="..\Libraries\CMSIS\CM3\CoreSupport"/>
+									<listOptionValue builtIn="false" value="..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.1866522283" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.42951174" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32L152RB" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.453735471" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.675453811" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_garbage.2114965532" name="Prepare dead code removal" superClass="com.atollic.truestudio.gpp.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_data.1969009545" name="Prepare dead data removal" superClass="com.atollic.truestudio.gpp.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_rtti.1255222785" name="Disable RTTI" superClass="com.atollic.truestudio.gpp.optimization.fno_rtti"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_exceptions.2145261697" name="Disable exception handling" superClass="com.atollic.truestudio.gpp.optimization.fno_exceptions"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.ldcc.2028766538" name="C++ Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ldcc">
+								<option id="com.atollic.truestudio.common_options.target.endianess.2008539470" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess" value="com.atollic.truestudio.common_options.target.endianess.little" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.767448057" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32L152RB" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1047360689" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.391950872" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.ldcc.optimization.do_garbage.1741420645" name="Dead code removal" superClass="com.atollic.truestudio.ldcc.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ldcc.general.scriptfile.1687108622" name="Linker script" superClass="com.atollic.truestudio.ldcc.general.scriptfile" value="..\stm32_flash.ld" valueType="string"/>
+								<option id="com.atollic.truestudio.ldcc.libraries.list.1922377244" name="Libraries" superClass="com.atollic.truestudio.ldcc.libraries.list" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+								</option>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.debug.toolchain.secoutput.904332181" name="Other" superClass="com.atollic.truestudio.exe.debug.toolchain.secoutput"/>
+						</toolChain>
+					</folderInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/CMSIS/CM3/CoreSupport/core_cm3.c" name="core_cm3.c" rcbsApplicability="disable" resourcePath="Libraries/CMSIS/CM3/CoreSupport/core_cm3.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1961238134">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1961238134" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1149749097" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_iwdg.c" name="stm32l1xx_iwdg.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_iwdg.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1916825168">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1916825168" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.804271171" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_spi.c" name="stm32l1xx_spi.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_spi.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1040261864">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1040261864" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1832814828" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dbgmcu.c" name="stm32l1xx_dbgmcu.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dbgmcu.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1931528046">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1931528046" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1302580349" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_pwr.c" name="stm32l1xx_pwr.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_pwr.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.453345576">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.453345576" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1932011979" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_gpio.c" name="stm32l1xx_gpio.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_gpio.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.203999012">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.203999012" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.716842506" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rtc.c" name="stm32l1xx_rtc.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rtc.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.971191257">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.971191257" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.791026638" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_usart.c" name="stm32l1xx_usart.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_usart.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1025931644">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1025931644" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1650145199" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_syscfg.c" name="stm32l1xx_syscfg.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_syscfg.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1981196079">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1981196079" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.334195485" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dac.c" name="stm32l1xx_dac.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dac.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.567839126">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.567839126" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.760386233" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_wwdg.c" name="stm32l1xx_wwdg.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_wwdg.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.464770726">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.464770726" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1890429641" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash_ramfunc.c" name="stm32l1xx_flash_ramfunc.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash_ramfunc.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1313293194">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1313293194" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.553311229" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/misc.c" name="misc.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/misc.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1621207772">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1621207772" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1017446106" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_crc.c" name="stm32l1xx_crc.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_crc.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.265603110">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.265603110" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1831067714" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_lcd.c" name="stm32l1xx_lcd.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_lcd.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1218432829">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1218432829" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.828230751" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dma.c" name="stm32l1xx_dma.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dma.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.171690139">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.171690139" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1266515512" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rcc.c" name="stm32l1xx_rcc.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rcc.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1814369077">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1814369077" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1004093535" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_adc.c" name="stm32l1xx_adc.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_adc.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.670364764">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.670364764" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.875234263" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_tim.c" name="stm32l1xx_tim.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_tim.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.500469431">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.500469431" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1170258829" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_comp.c" name="stm32l1xx_comp.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_comp.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.109349202">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.109349202" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.304035201" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash.c" name="stm32l1xx_flash.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1924637186">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1924637186" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.892644428" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_i2c.c" name="stm32l1xx_i2c.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_i2c.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.430481429">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.430481429" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1182309832" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_exti.c" name="stm32l1xx_exti.c" rcbsApplicability="disable" resourcePath="Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_exti.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.545708521">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.545708521" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.299455146" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.mcu/src/mcu.c" name="mcu.c" rcbsApplicability="disable" resourcePath="mcu/src/mcu.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1656931302">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1656931302" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1494568234" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.mcu/src/usart.c" name="usart.c" rcbsApplicability="disable" resourcePath="mcu/src/usart.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1632437277">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1632437277" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.1768313711" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.src/stm32l1xx_it.c" name="stm32l1xx_it.c" rcbsApplicability="disable" resourcePath="src/stm32l1xx_it.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1978236325">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1978236325" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.435642736" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.src/main.c" name="main.c" rcbsApplicability="disable" resourcePath="src/main.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1460470723">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1460470723" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.502373168" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<fileInfo id="com.atollic.truestudio.exe.debug.2033273424.src/system_stm32l1xx.c" name="system_stm32l1xx.c" rcbsApplicability="disable" resourcePath="src/system_stm32l1xx.c" toolsToInvoke="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1629214928">
+						<tool id="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1629214928" name="C Compiler" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569">
+							<inputType id="com.atollic.truestudio.gcc.input.522901869" superClass="com.atollic.truestudio.gcc.input"/>
+						</tool>
+					</fileInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Libraries"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="hw"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="mcu"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+		<cconfiguration id="com.atollic.truestudio.configuration.release.916809977">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.atollic.truestudio.configuration.release.916809977" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="com.atollic.truestudio.configuration.release.916809977" name="Release" parent="com.atollic.truestudio.configuration.release">
+					<folderInfo id="com.atollic.truestudio.configuration.release.916809977." name="/" resourcePath="">
+						<toolChain id="com.atollic.truestudio.exe.release.toolchain.772123381" name="Atollic ARM Tools" superClass="com.atollic.truestudio.exe.release.toolchain">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.release.toolchain.platform.393795789" isAbstract="false" name="release platform" superClass="com.atollic.truestudio.exe.release.toolchain.platform"/>
+							<builder buildPath="${workspace_loc:/basic_project/Release}" id="com.atollic.truestudio.mbs.builder1.962551700" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="com.atollic.truestudio.mbs.builder1"/>
+							<tool id="com.atollic.truestudio.exe.release.toolchain.as.142990677" name="Assembler" superClass="com.atollic.truestudio.exe.release.toolchain.as">
+								<option id="com.atollic.truestudio.common_options.target.endianess.535239389" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1550667724" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32L152RB" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1614793614" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.496925555" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.as.symbols.defined.750100971" name="Defined symbols" superClass="com.atollic.truestudio.as.symbols.defined"/>
+								<option id="com.atollic.truestudio.as.general.incpath.1139749311" name="Include path" superClass="com.atollic.truestudio.as.general.incpath"/>
+								<inputType id="com.atollic.truestudio.as.input.1396969392" name="Input" superClass="com.atollic.truestudio.as.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.release.toolchain.gcc.1474259399" name="C Compiler" superClass="com.atollic.truestudio.exe.release.toolchain.gcc">
+								<option id="com.atollic.truestudio.gcc.symbols.defined.100347085" name="Defined symbols" superClass="com.atollic.truestudio.gcc.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32L1XX_MD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+								</option>
+								<option id="com.atollic.truestudio.gcc.directories.select.823804944" name="Include path" superClass="com.atollic.truestudio.gcc.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="..\Libraries\STM32L1xx_StdPeriph_Driver\inc"/>
+									<listOptionValue builtIn="false" value="..\Libraries\CMSIS\CM3\CoreSupport"/>
+									<listOptionValue builtIn="false" value="..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.1917920589" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.256889773" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32L152RB" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.2146828086" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.47926089" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_garbage.1956492661" name="Prepare dead code removal" superClass="com.atollic.truestudio.gcc.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gcc.optimization.prep_data.1335432467" name="Prepare dead data removal" superClass="com.atollic.truestudio.gcc.optimization.prep_data" value="true" valueType="boolean"/>
+								<inputType id="com.atollic.truestudio.gcc.input.1486848652" superClass="com.atollic.truestudio.gcc.input"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.release.toolchain.ld.359467943" name="C Linker" superClass="com.atollic.truestudio.exe.release.toolchain.ld">
+								<option id="com.atollic.truestudio.common_options.target.endianess.2060274820" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1977438528" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32L152RB" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1747098499" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.643150754" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.ld.general.scriptfile.1014223355" name="Linker script" superClass="com.atollic.truestudio.ld.general.scriptfile" value="..\stm32_flash.ld" valueType="string"/>
+								<option id="com.atollic.truestudio.ld.optimization.do_garbage.1731441739" name="Dead code removal" superClass="com.atollic.truestudio.ld.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ld.libraries.list.337959200" name="Libraries" superClass="com.atollic.truestudio.ld.libraries.list" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+								</option>
+								<inputType id="com.atollic.truestudio.ld.input.1086250817" name="Input" superClass="com.atollic.truestudio.ld.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.release.toolchain.gpp.1228090363" name="C++ Compiler" superClass="com.atollic.truestudio.exe.release.toolchain.gpp">
+								<option id="com.atollic.truestudio.gpp.symbols.defined.1539603754" name="Defined symbols" superClass="com.atollic.truestudio.gpp.symbols.defined" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32L1XX_MD"/>
+									<listOptionValue builtIn="false" value="USE_STDPERIPH_DRIVER"/>
+								</option>
+								<option id="com.atollic.truestudio.gpp.directories.select.1105046405" name="Include path" superClass="com.atollic.truestudio.gpp.directories.select" valueType="includePath">
+									<listOptionValue builtIn="false" value="../src"/>
+									<listOptionValue builtIn="false" value="..\Libraries\STM32L1xx_StdPeriph_Driver\inc"/>
+									<listOptionValue builtIn="false" value="..\Libraries\CMSIS\CM3\CoreSupport"/>
+									<listOptionValue builtIn="false" value="..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32L1xx"/>
+								</option>
+								<option id="com.atollic.truestudio.common_options.target.endianess.108994876" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.1917086603" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32L152RB" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.1442048171" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.984730600" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_garbage.2116206411" name="Prepare dead code removal" superClass="com.atollic.truestudio.gpp.optimization.prep_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.prep_data.1119963092" name="Prepare dead data removal" superClass="com.atollic.truestudio.gpp.optimization.prep_data" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_rtti.2005042823" name="Disable RTTI" superClass="com.atollic.truestudio.gpp.optimization.fno_rtti"/>
+								<option id="com.atollic.truestudio.gpp.optimization.fno_exceptions.1914496884" name="Disable exception handling" superClass="com.atollic.truestudio.gpp.optimization.fno_exceptions"/>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.release.toolchain.ldcc.1698716193" name="C++ Linker" superClass="com.atollic.truestudio.exe.release.toolchain.ldcc">
+								<option id="com.atollic.truestudio.common_options.target.endianess.574932034" name="Endianess" superClass="com.atollic.truestudio.common_options.target.endianess"/>
+								<option id="com.atollic.truestudio.common_options.target.mcpu.265126160" name="Microcontroller" superClass="com.atollic.truestudio.common_options.target.mcpu" value="STM32L152RB" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.instr_set.220314217" name="Instruction set" superClass="com.atollic.truestudio.common_options.target.instr_set" value="com.atollic.truestudio.common_options.target.instr_set.thumb2" valueType="enumerated"/>
+								<option id="com.atollic.truestudio.common_options.target.fpu.1292177966" name="Floating point" superClass="com.atollic.truestudio.common_options.target.fpu"/>
+								<option id="com.atollic.truestudio.ldcc.optimization.do_garbage.271485034" name="Dead code removal" superClass="com.atollic.truestudio.ldcc.optimization.do_garbage" value="true" valueType="boolean"/>
+								<option id="com.atollic.truestudio.ldcc.general.scriptfile.2110021235" name="Linker script" superClass="com.atollic.truestudio.ldcc.general.scriptfile" value="..\stm32_flash.ld" valueType="string"/>
+								<option id="com.atollic.truestudio.ldcc.libraries.list.941615323" name="Libraries" superClass="com.atollic.truestudio.ldcc.libraries.list" valueType="libs">
+									<listOptionValue builtIn="false" value="m"/>
+								</option>
+							</tool>
+							<tool id="com.atollic.truestudio.exe.release.toolchain.secoutput.1663170316" name="Other" superClass="com.atollic.truestudio.exe.release.toolchain.secoutput"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Libraries"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
+			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="basic_project.com.atollic.truestudio.exe.633171092" name="Executable" projectType="com.atollic.truestudio.exe"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/basic_project"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/misc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1621207772;com.atollic.truestudio.gcc.input.1017446106">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_lcd.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1218432829;com.atollic.truestudio.gcc.input.828230751">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dma.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.171690139;com.atollic.truestudio.gcc.input.1266515512">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.mcu/src/usart.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1632437277;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_adc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.670364764;com.atollic.truestudio.gcc.input.875234263">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_syscfg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1981196079;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_wwdg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.464770726;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_crc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.265603110;com.atollic.truestudio.gcc.input.1831067714">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/misc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1621207772;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_wwdg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.464770726;com.atollic.truestudio.gcc.input.1890429641">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_usart.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1025931644;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash_ramfunc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1313293194;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/stm32l1xx_it.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1978236325;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/system_stm32l1xx.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1629214928;com.atollic.truestudio.gcc.input.522901869">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rcc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1814369077;com.atollic.truestudio.gcc.input.1004093535">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dbgmcu.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1931528046;com.atollic.truestudio.gcc.input.1302580349">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_pwr.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.453345576;com.atollic.truestudio.gcc.input.1932011979">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dbgmcu.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1931528046;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_gpio.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.203999012;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_tim.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.500469431;com.atollic.truestudio.gcc.input.1170258829">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_i2c.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.430481429;com.atollic.truestudio.gcc.input.1182309832">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dac.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.567839126;com.atollic.truestudio.gcc.input.760386233">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.mcu/src/usart.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1632437277;com.atollic.truestudio.gcc.input.1768313711">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1924637186;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/main.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1460470723;com.atollic.truestudio.gcc.input.502373168">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/main.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1460470723;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_spi.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1040261864;com.atollic.truestudio.gcc.input.1832814828">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dma.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.171690139;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/stm32l1xx_it.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1978236325;com.atollic.truestudio.gcc.input.435642736">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1924637186;com.atollic.truestudio.gcc.input.892644428">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_syscfg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1981196079;com.atollic.truestudio.gcc.input.334195485">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_exti.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.545708521;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/CMSIS/CM3/CoreSupport/core_cm3.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1961238134;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dac.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.567839126;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_pwr.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.453345576;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rcc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1814369077;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_crc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.265603110;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_i2c.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.430481429;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_gpio.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.203999012;com.atollic.truestudio.gcc.input.716842506">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/system_stm32l1xx.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1629214928;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_comp.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.109349202;com.atollic.truestudio.gcc.input.304035201">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_iwdg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1916825168;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/CMSIS/CM3/CoreSupport/core_cm3.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1961238134;com.atollic.truestudio.gcc.input.1149749097">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rtc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.971191257;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_exti.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.545708521;com.atollic.truestudio.gcc.input.299455146">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.mcu/src/mcu.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1656931302;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_iwdg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1916825168;com.atollic.truestudio.gcc.input.804271171">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_adc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.670364764;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.mcu/src/mcu.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1656931302;com.atollic.truestudio.gcc.input.1494568234">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_spi.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1040261864;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rtc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.971191257;com.atollic.truestudio.gcc.input.791026638">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_lcd.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1218432829;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_tim.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.500469431;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_comp.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.109349202;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_usart.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1025931644;com.atollic.truestudio.gcc.input.1650145199">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash_ramfunc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1313293194;com.atollic.truestudio.gcc.input.553311229">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
