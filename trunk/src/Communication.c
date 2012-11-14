@@ -40,6 +40,54 @@ uint8_t StartsWith(volatile char* source, volatile char* search,volatile int len
 	return 0;
 }
 
+
+/*!
+* \brief print_i function : convert the given number to an ASCII decimal representation.
+*/
+char *print_i(char *str, signed int n)
+{
+	int j,i = 10;
+	unsigned char negative = 0;
+
+	for( j=0; j<10; j++)
+		str[j]=0;
+
+	if(n<0){
+		negative = 1;
+		n = -1*n;
+	}
+
+	str[i] = '\0';
+	do
+	{
+		str[--i] = '0' + n%10;
+		n /= 10;
+	}while(n);
+
+	if(negative){
+		str[--i] = '-';
+	}
+
+	return &str[i];
+}
+
+
+char* print_float(char* buffer, float value, int precision){
+	char temp[32];
+	char *pom;
+	int celaCast = (int)value;
+	int desatinnaCast = (int)((value-celaCast) * 100);
+	if( desatinnaCast < 0 ) desatinnaCast *= -1;
+	pom=print_i(temp,celaCast);
+	strcpy(buffer,pom);
+	buffer[strlen(buffer)+1]=0;
+	buffer[strlen(buffer)]='.';
+	pom=print_i(temp,desatinnaCast);
+	strcpy(buffer+strlen(buffer),pom);
+	buffer[strlen(buffer)]=0;
+	return buffer;
+}
+
 void printInvalidParameter(void){
 	PutsUART2("Invalid parameter\r\n");
 }
@@ -49,7 +97,7 @@ void printInvalidParameter(void){
 void Communicate(unsigned char znak)
 {
 	static char buffer[32];
-	//static char outbuffer[64];
+	static char outbuffer[64];
 	static int i;
 	float pomf;
 	buffer[i] = (char) znak;
@@ -93,7 +141,11 @@ void Communicate(unsigned char znak)
 					printInvalidParameter();
 				}
 			}
-			myprintf("set temp=%f\r\n", desired_temp);
+			//myprintf("set temp=%f\r\n", desired_temp);
+			PutsUART2("set temp=");
+			print_float(outbuffer,desired_temp,2);
+			PutsUART2(outbuffer);
+			PutsUART2("\r\n");
 		}else
 		if(StartsWith(buffer,"hyst",4)){
 			if(space != NULL){//set
@@ -111,7 +163,7 @@ void Communicate(unsigned char znak)
 			PutsUART2("Defaults loaded.\r\n");
 		}else
 		if(StartsWith(buffer,"help",4)){
-			PutsUART2("Help text\r\n");
+			PutsUART2("set temp\tDesired temperature\r\nhyst\tHysteresis\r\nver\tVersion info\r\n");
 		}else
 		if(StartsWith(buffer,"ver",3)){
 			PutsUART2("V0.0\r\n");
