@@ -82,6 +82,8 @@ void USART2_IRQHandler(void)
 	{
 		volatile uint32_t aSr = USART2->SR;
 		volatile uint8_t aDr = USART2->DR;
+		aSr = aSr;
+		aDr = aDr;
 	}
 
 	if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET)		//checking if a character was received
