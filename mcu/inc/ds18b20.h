@@ -23,4 +23,7 @@ unsigned int ds18b20_read_temp(void);
 //signed int convert_temp(unsigned int raw);
 float convert_temp(unsigned int raw);
 
+
+#define ds18b20_convert_t() ds18b20_command(DS18B20_CONVERT_T);
+
 #endif /* DS18B20_H_ */
