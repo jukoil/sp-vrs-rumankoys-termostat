@@ -46,6 +46,7 @@
 								<option id="com.atollic.truestudio.gcc.optimization.prep_garbage.627395551" name="Prepare dead code removal" superClass="com.atollic.truestudio.gcc.optimization.prep_garbage" value="true" valueType="boolean"/>
 								<option id="com.atollic.truestudio.gcc.optimization.prep_data.1957318755" name="Prepare dead data removal" superClass="com.atollic.truestudio.gcc.optimization.prep_data" value="true" valueType="boolean"/>
 								<option id="com.atollic.truestudio.common_options.target.interwork.1512673060" name="Mix ARM/Thumb" superClass="com.atollic.truestudio.common_options.target.interwork"/>
+								<option id="com.atollic.truestudio.exe.debug.toolchain.gcc.optimization.level.2068752850" name="Optimization Level" superClass="com.atollic.truestudio.exe.debug.toolchain.gcc.optimization.level" value="com.atollic.truestudio.gcc.optimization.level.00" valueType="enumerated"/>
 								<inputType id="com.atollic.truestudio.gcc.input.80024303" superClass="com.atollic.truestudio.gcc.input"/>
 							</tool>
 							<tool id="com.atollic.truestudio.exe.debug.toolchain.ld.1971701161" name="C Linker" superClass="com.atollic.truestudio.exe.debug.toolchain.ld">
@@ -221,175 +222,175 @@
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/misc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1621207772;com.atollic.truestudio.gcc.input.1017446106">
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_syscfg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1981196079;com.atollic.truestudio.gcc.input.80024303">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_lcd.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1218432829;com.atollic.truestudio.gcc.input.828230751">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dma.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.171690139;com.atollic.truestudio.gcc.input.1266515512">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.mcu/src/usart.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1632437277;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_adc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.670364764;com.atollic.truestudio.gcc.input.875234263">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_syscfg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1981196079;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_wwdg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.464770726;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_crc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.265603110;com.atollic.truestudio.gcc.input.1831067714">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/misc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1621207772;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_wwdg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.464770726;com.atollic.truestudio.gcc.input.1890429641">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_usart.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1025931644;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash_ramfunc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1313293194;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/stm32l1xx_it.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1978236325;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/system_stm32l1xx.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1629214928;com.atollic.truestudio.gcc.input.522901869">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rcc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1814369077;com.atollic.truestudio.gcc.input.1004093535">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dbgmcu.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1931528046;com.atollic.truestudio.gcc.input.1302580349">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_pwr.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.453345576;com.atollic.truestudio.gcc.input.1932011979">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dbgmcu.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1931528046;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_gpio.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.203999012;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_tim.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.500469431;com.atollic.truestudio.gcc.input.1170258829">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_i2c.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.430481429;com.atollic.truestudio.gcc.input.1182309832">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dac.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.567839126;com.atollic.truestudio.gcc.input.760386233">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.mcu/src/usart.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1632437277;com.atollic.truestudio.gcc.input.1768313711">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1924637186;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/main.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1460470723;com.atollic.truestudio.gcc.input.502373168">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/main.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1460470723;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_spi.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1040261864;com.atollic.truestudio.gcc.input.1832814828">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dma.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.171690139;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/stm32l1xx_it.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1978236325;com.atollic.truestudio.gcc.input.435642736">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1924637186;com.atollic.truestudio.gcc.input.892644428">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_syscfg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1981196079;com.atollic.truestudio.gcc.input.334195485">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_exti.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.545708521;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/CMSIS/CM3/CoreSupport/core_cm3.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1961238134;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dac.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.567839126;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_pwr.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.453345576;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rcc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1814369077;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_crc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.265603110;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_i2c.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.430481429;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_gpio.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.203999012;com.atollic.truestudio.gcc.input.716842506">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/system_stm32l1xx.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1629214928;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_comp.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.109349202;com.atollic.truestudio.gcc.input.304035201">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_iwdg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1916825168;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/CMSIS/CM3/CoreSupport/core_cm3.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1961238134;com.atollic.truestudio.gcc.input.1149749097">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rtc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.971191257;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_exti.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.545708521;com.atollic.truestudio.gcc.input.299455146">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.mcu/src/mcu.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1656931302;com.atollic.truestudio.gcc.input.80024303">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
-		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_iwdg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1916825168;com.atollic.truestudio.gcc.input.804271171">
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.mcu/src/mcu.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1656931302;com.atollic.truestudio.gcc.input.1494568234">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_adc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.670364764;com.atollic.truestudio.gcc.input.80024303">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.mcu/src/mcu.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1656931302;com.atollic.truestudio.gcc.input.1494568234">
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/system_stm32l1xx.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1629214928;com.atollic.truestudio.gcc.input.80024303">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_spi.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1040261864;com.atollic.truestudio.gcc.input.80024303">
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_exti.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.545708521;com.atollic.truestudio.gcc.input.299455146">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rtc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.971191257;com.atollic.truestudio.gcc.input.791026638">
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1924637186;com.atollic.truestudio.gcc.input.892644428">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_lcd.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1218432829;com.atollic.truestudio.gcc.input.80024303">
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/CMSIS/CM3/CoreSupport/core_cm3.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1961238134;com.atollic.truestudio.gcc.input.1149749097">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
 		</scannerConfigBuildInfo>
-		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_tim.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.500469431;com.atollic.truestudio.gcc.input.80024303">
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/system_stm32l1xx.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1629214928;com.atollic.truestudio.gcc.input.522901869">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/stm32l1xx_it.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1978236325;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/stm32l1xx_it.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1978236325;com.atollic.truestudio.gcc.input.435642736">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rtc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.971191257;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash_ramfunc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1313293194;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rcc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1814369077;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.mcu/src/usart.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1632437277;com.atollic.truestudio.gcc.input.1768313711">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dbgmcu.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1931528046;com.atollic.truestudio.gcc.input.1302580349">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dbgmcu.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1931528046;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_tim.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.500469431;com.atollic.truestudio.gcc.input.1170258829">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_gpio.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.203999012;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dma.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.171690139;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_comp.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.109349202;com.atollic.truestudio.gcc.input.304035201">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_i2c.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.430481429;com.atollic.truestudio.gcc.input.1182309832">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_pwr.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.453345576;com.atollic.truestudio.gcc.input.1932011979">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_gpio.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.203999012;com.atollic.truestudio.gcc.input.716842506">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.mcu/src/usart.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1632437277;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_syscfg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1981196079;com.atollic.truestudio.gcc.input.334195485">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_comp.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.109349202;com.atollic.truestudio.gcc.input.80024303">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_crc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.265603110;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_crc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.265603110;com.atollic.truestudio.gcc.input.1831067714">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_i2c.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.430481429;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_wwdg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.464770726;com.atollic.truestudio.gcc.input.1890429641">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.mcu/src/mcu.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1656931302;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_lcd.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1218432829;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/main.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1460470723;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_pwr.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.453345576;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dac.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.567839126;com.atollic.truestudio.gcc.input.760386233">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_iwdg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1916825168;com.atollic.truestudio.gcc.input.804271171">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_iwdg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1916825168;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/misc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1621207772;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_wwdg.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.464770726;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_usart.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1025931644;com.atollic.truestudio.gcc.input.1650145199">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_tim.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.500469431;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_spi.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1040261864;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dac.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.567839126;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_dma.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.171690139;com.atollic.truestudio.gcc.input.1266515512">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/misc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1621207772;com.atollic.truestudio.gcc.input.1017446106">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/CMSIS/CM3/CoreSupport/core_cm3.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1961238134;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_adc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.670364764;com.atollic.truestudio.gcc.input.875234263">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_usart.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1025931644;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_spi.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1040261864;com.atollic.truestudio.gcc.input.1832814828">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rtc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.971191257;com.atollic.truestudio.gcc.input.791026638">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.src/main.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1460470723;com.atollic.truestudio.gcc.input.502373168">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1924637186;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_rcc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1814369077;com.atollic.truestudio.gcc.input.1004093535">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569;com.atollic.truestudio.gcc.input.80024303">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
+		</scannerConfigBuildInfo>
 		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_flash_ramfunc.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.1313293194;com.atollic.truestudio.gcc.input.553311229">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.2033273424;com.atollic.truestudio.exe.debug.2033273424.Libraries/STM32L1xx_StdPeriph_Driver/src/stm32l1xx_exti.c;com.atollic.truestudio.exe.debug.toolchain.gcc.1627321569.545708521;com.atollic.truestudio.gcc.input.80024303">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
 		</scannerConfigBuildInfo>
 	</storageModule>

@@ -53,7 +53,7 @@ float hysteresis = 2.0f;
 void OW_Init(){
 	OW_InitTypeDef OW_InitStructure;
 	OW_InitStructure.PORT = GPIOA;
-	OW_InitStructure.GPIO_PinSource = 1;
+	OW_InitStructure.Pin = 5;
 	OW_Config(OW_InitStructure);
 }
 
@@ -68,10 +68,26 @@ int main(void)
 
     while(1)
     {
-    	tick++;
-    	if(tick%10000){
+    		ds18b20_convert_t();
+    		delay_us(750000*2);
     		actual_temp = convert_temp(ds18b20_read_temp());
-    	}
+
+//    		TestTiming();
+    		OW_address add;
+    		while(OW_search(add.bytes)){
+    			PutsUART2("Found address ");
+    			PrintAddress(add.ull);
+    			PutsUART2("\r\n Type: ");
+    			switch(add.info.FamilyCode){
+					case DS18B20_FAMILY_CODE:
+						PutsUART2("DS18B20 thermometer\r\n");
+						break;
+					default:
+						PutsUART2("unknown\r\n");
+						break;
+    			}
+    		}
+    		OW_reset_search();
     }
 
 	return 0;
