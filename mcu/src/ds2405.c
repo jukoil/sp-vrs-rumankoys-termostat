@@ -6,9 +6,17 @@
  */
 #include "ds2405.h"
 
-//neviem ci som dobre pochopil ako to funguje
-uint8_t ds2405_toggle_bit(){
+void ds2405_set_bit(uint8_t rom[8], uint8_t bit){
+	if(OW_reset()==0) return;
+	OW_Match_ROM(rom);
+	uint8_t stav = OW_read_bit();
+	if((stav==0)!=(bit!=0)){
+		OW_write_bit(1);
+	}
+}
+
+uint8_t ds2405_read_bit(uint8_t rom[8]){
 	if(OW_reset()==0) return 0;
-	OW_write_byte(OW_SKIP_ROM_COMMAND); // skip ROM command
+	OW_Match_ROM(rom);
 	return OW_read_bit();
 }

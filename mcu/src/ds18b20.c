@@ -24,6 +24,17 @@ unsigned int ds18b20_read_temp(){
 	return scratchpad;
 }
 
+unsigned int ds18b20_read_temp_ROM(uint8_t rom[8]){
+	unsigned int scratchpad=0;
+	//ds18b20_command(DS18B20_CONVERT_T);
+	//_delay_ms(750);
+	ds18b20_command_ROM(rom, DS18B20_READ_SCRATCHPAD);
+	scratchpad=OW_read_byte();
+	scratchpad|=((uint16_t)OW_read_byte())<<8;
+	OW_reset();
+	return scratchpad;
+}
+
 /*signed int convert_temp(unsigned int raw){
 	unsigned char negative=0;
 	signed int result;
