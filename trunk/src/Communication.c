@@ -40,11 +40,11 @@ uint8_t StartsWith(volatile char* source, volatile char* search,volatile int len
 	return 0;
 }
 
-void PrintAddress(uint64_t data){
-	char buffer[17];
+char* PrintAddress(uint64_t data){
+	static char buffer[17];
 	char* ptr = buffer;
-	int i = 16;
-	while(i>0){
+	int i = 14;
+	while(i>=0){
 		uint8_t nibble = (data >> (i*4)) & 0x0f;
 		if(nibble<10){
 			*ptr = nibble+'0';
@@ -55,7 +55,8 @@ void PrintAddress(uint64_t data){
 		i--;
 	}
 	buffer[16] = '\0';
-	PutsUART2(buffer);
+	//PutsUART2(buffer);
+	return buffer;
 }
 
 /*!

@@ -20,6 +20,7 @@
 
 void ds18b20_command(unsigned char command);
 unsigned int ds18b20_read_temp(void);
+unsigned int ds18b20_read_temp_ROM(uint8_t rom[8]);
 //signed int convert_temp(unsigned int raw);
 float convert_temp(unsigned int raw);
 

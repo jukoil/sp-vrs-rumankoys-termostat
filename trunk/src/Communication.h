@@ -14,6 +14,6 @@
 #include "main.h"
 
 void Communicate(unsigned char data);
-void PrintAddress(uint64_t data);
+char* PrintAddress(uint64_t data);
 
 #endif /* COMMUNICATION_H_ */
