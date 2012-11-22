@@ -8,6 +8,7 @@
 
 void ds2405_set_bit(uint8_t rom[8], uint8_t bit){
 	if(OW_reset()==0) return;
+	heating = bit;
 	OW_Match_ROM(rom);
 	uint8_t stav = OW_read_bit();
 	if((stav==0)!=(bit!=0)){

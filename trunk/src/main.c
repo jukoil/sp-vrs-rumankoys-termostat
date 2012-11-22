@@ -25,129 +25,7 @@
 *****************************************************************************
 */
 /* Includes */
-#include <stddef.h>
-#include <stdio.h>
-#include "mcu.h"
-#include "usart.h"
-#include "Communication.h"
-#include "onewire.h"
-#include "ds18b20.h"
-#include "ds2405.h"
-
-
-/**
-**===========================================================================
-**
-**  Abstract: main program
-**
-**===========================================================================
-*/
-
-int tick = 0;
-
-char heating = 0;
-float actual_temp = 20.0f;
-float desired_temp = 20.0f;
-float hysteresis = 2.0f;
-int selected_thermo = 0;
-int selected_switch = 0;
-
-OW_address OW_device[10];
-int  OW_devices_count = 0;
-
-void OW_Init(){
-	OW_InitTypeDef OW_InitStructure;
-	OW_InitStructure.PORT = GPIOA;
-	OW_InitStructure.Pin = 5;
-	OW_Config(OW_InitStructure);
-}
-
-void rescan(void){
-	OW_devices_count=0;
-	OW_reset_search();
-	while(OW_search(OW_device[OW_devices_count].bytes)){
-		PutsUART2("Found address ");
-		PutsUART2(PrintAddress(OW_device[OW_devices_count].ull));
-		PutsUART2(" Type: ");
-		switch(OW_device[OW_devices_count].info.FamilyCode){
-			case DS18B20_FAMILY_CODE:
-				PutsUART2("DS18B20 thermometer\r\n");
-				break;
-			case DS2405_FAMILY_CODE:
-				PutsUART2("DS2405 switch\r\n");
-
-				static uint8_t poslednybit = 0;
-				ds2405_set_bit(OW_device[OW_devices_count].bytes, poslednybit);
-				poslednybit = ! poslednybit;
-
-				break;
-			default:
-				PutsUART2("unknown device\r\n");
-				break;
-		}
-		OW_devices_count++;
-	}
-}
-
-void print_avail_devices(uint8_t desired_code){
-        int i=0;
-        int poradie=1;
-        char temp[128];
-
-        switch( desired_code ){
-        case DS18B20_FAMILY_CODE:
-                strcpy( temp, "List of Thermometers:\r\n");
-                break;
-        case DS2405_FAMILY_CODE:
-            	strcpy( temp, "List of Switches:\r\n");
-                break;
-        default:
-        		strcpy( temp, "List of Unknown devices:\r\n");
-                break;
-        }
-        PutsUART2(temp);
-
-        for( i=0; i<OW_devices_count ; i++ ){
-                if( OW_device[i].info.FamilyCode == desired_code ){
-                        temp[0] = '0'+poradie++;
-                        temp[1] = '.';
-                        temp[2] = ' ';
-                        strcpy( temp+3, PrintAddress( OW_device[i].ull ) );
-                        strcpy( temp+strlen(temp), "\r\n\0" );
-                        PutsUART2(temp);
-                }
-        }
-}
-
-
-int avail_devices_count(uint8_t desired_code){
-        int i=0;
-        int pocet=0;
-
-        for( i=0; i<OW_devices_count ; i++ ){
-                if( OW_device[i].info.FamilyCode == desired_code ){
-                        pocet++;
-                }
-        }
-        return pocet;
-}
-
-
-OW_address poradie2address(uint8_t desired_code, int desired_poradie){
-        int i=0;
-        int poradie=1;
-        static OW_address null_address;
-        null_address.ull=0;
-
-        for( i=0; i<OW_devices_count ; i++ ){
-                if( OW_device[i].info.FamilyCode == desired_code ){
-                	if( desired_poradie == poradie )
-                		return OW_device[i];
-                	poradie++;
-                }
-        }
-        return null_address;
-}
+#include "main.h"
 
 
 int main(void)
@@ -176,15 +54,26 @@ int main(void)
 
     		ds18b20_convert_t();
     		delay_us(750000*2);
-    		if( selected_thermo_address.ull != 0 )
+
+    		if( selected_thermo_address.ull != 0 ){
     			actual_temp = convert_temp(ds18b20_read_temp_ROM( selected_thermo_address.bytes ));
+    		}else
+    			actual_temp = -273.15f;
+
+    		if( selected_switch_address.ull != 0 ){
+				if( actual_temp > desired_temp+hysteresis/2.0 ){
+					ds2405_set_bit( selected_switch_address.bytes, 0 );
+				}if( actual_temp < desired_temp-hysteresis/2.0 ){
+					ds2405_set_bit( selected_switch_address.bytes, 1 );
+				}
+    		}
 
 
-    		if( actual_temp > desired_temp+hysteresis/2.0 ){
-    		    ds2405_set_bit( selected_switch_address.bytes, 0 );
-			}if( actual_temp < desired_temp-hysteresis/2.0 ){
-				ds2405_set_bit( selected_switch_address.bytes, 1 );
-			}
+    		if( var_print_variables )
+    			print_variables();
+
+    		if( var_print_display )
+    			print_display();
 
 //    		TestTiming();
 

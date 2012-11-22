@@ -9,6 +9,7 @@
 #define DS2405_H_
 
 #include "onewire.h"
+#include "termostat.h"
 
 
 #define DS2405_FAMILY_CODE	0x05
