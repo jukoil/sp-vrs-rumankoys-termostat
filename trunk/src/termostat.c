@@ -173,7 +173,7 @@ int avail_devices_count(uint8_t desired_code){
 
 OW_address poradie2address(uint8_t desired_code, int desired_poradie){
         int i=0;
-        int poradie=1;
+        int poradie=0;
         static OW_address null_address;
         null_address.ull=0;
 

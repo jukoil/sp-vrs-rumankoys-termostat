@@ -39,4 +39,8 @@ OW_address poradie2address(uint8_t desired_code, int desired_poradie);
 
 void SetDefaults(void);
 
+void print_variables(void);
+
+void print_display(void);
+
 #endif /* TERMOSTAT_H_ */
