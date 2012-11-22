@@ -27,9 +27,10 @@
 					   "Csaba Ruman\r\n"\
 					   "Juraj Koys\r\n"
 
-//TODO treba vyskusat
-uint8_t StartsWith(volatile char* source, volatile char* search){
+
+uint8_t StartsWith(volatile char* source, char* search){
 	int len = strlen(search);
+	//TODO case insensitive
 	while(*source == *search){
 		if(!--len){
 			return 1;
@@ -142,7 +143,7 @@ void myprintf( char *format, void *number ){
 		strcpy( buffer+strlen(buffer), percento+2 );
 		PutsUART2(buffer);
 	}else{
-		PutsUART2(buffer);
+		PutsUART2(format);
 	}
 }
 
