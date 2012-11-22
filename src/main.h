@@ -8,9 +8,14 @@
 #ifndef MAIN_H_
 #define MAIN_H_
 
-extern char heating;
-extern float actual_temp;
-extern float desired_temp;
-extern float hysteresis;
+#include <stddef.h>
+#include <stdio.h>
+#include "mcu.h"
+#include "usart.h"
+#include "Communication.h"
+#include "onewire.h"
+#include "ds18b20.h"
+#include "ds2405.h"
+#include "termostat.h"
 
 #endif /* MAIN_H_ */
