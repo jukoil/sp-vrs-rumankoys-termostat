@@ -63,9 +63,6 @@ void rescan(void){
 	OW_devices_count=0;
 	OW_reset_search();
 	while(OW_search(OW_device[OW_devices_count].bytes)){
-		/*myprintf_("Found address ");
-		myprintf_(PrintAddress(OW_device[OW_devices_count].ull));
-		myprintf_(" Type: ");*/
 		myprintf("Found address %x Type: ",OW_device[OW_devices_count].ull);
 		switch(OW_device[OW_devices_count].info.FamilyCode){
 			case DS18B20_FAMILY_CODE:
@@ -89,7 +86,7 @@ void rescan(void){
 
 void print_avail_devices(uint8_t desired_code){
         int i=0;
-        int poradie=1;
+        int poradie=0;
         char temp[128];
 
         switch( desired_code ){
@@ -107,13 +104,6 @@ void print_avail_devices(uint8_t desired_code){
 
         for( i=0; i<OW_devices_count ; i++ ){
 			if( OW_device[i].info.FamilyCode == desired_code ){
-				/*temp[0] = '0'+poradie++;
-				temp[1] = '.';
-				temp[2] = ' ';
-				strcpy( &temp[3], PrintAddress( OW_device[i].ull ) );
-				strcpy( temp+strlen(temp), "\r\n\0" );
-				myprintf_(temp);*/
-
 				myprintf(" %i.",poradie);
 				poradie++;
 				myprintf(" %x \r\n",OW_device[i].ull);
@@ -127,14 +117,8 @@ void print_avail_devices(uint8_t desired_code){
 void print_all_avail_devices(void){
         int i=0;
         int poradie=1;
-        //char temp[128];
 
         for( i=0; i<OW_devices_count ; i++ ){
-
-			/*temp[0] = '0'+poradie++;
-			temp[1] = '.';
-			temp[2] = ' ';
-			strcpy( &temp[3], PrintAddress( OW_device[i].ull ) );*/
 
 			myprintf(" %i.",poradie);
 			poradie++;
@@ -151,9 +135,6 @@ void print_all_avail_devices(void){
 						myprintf_("Unknown device\r\n");
 						break;
             }
-			/*strcpy( temp+strlen(temp), "\r\n\0" );
-			myprintf_(temp);*/
-
         }
 }
 
