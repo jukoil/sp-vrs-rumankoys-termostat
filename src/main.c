@@ -58,7 +58,9 @@ int main(void)
     		if( selected_thermo_address.ull != 0 ){
     			actual_temp = convert_temp(ds18b20_read_temp_ROM( selected_thermo_address.bytes ));
     		}else
-    			actual_temp = -273.15f;
+    			actual_temp = NAN; // Error hlaska
+    		if( actual_temp == 85 )
+    			actual_temp = NAN; // Error hlaska
 
     		if( selected_switch_address.ull != 0 ){
 				if( actual_temp > desired_temp+hysteresis/2.0 ){
@@ -74,8 +76,6 @@ int main(void)
 
     		if( var_print_display )
     			print_display();
-
-//    		TestTiming();
 
     }
 
