@@ -109,7 +109,7 @@ void print_avail_devices(uint8_t desired_code){
 				myprintf(" %x \r\n",OW_device[i].ull);
 			}
         }
-        if( poradie == 1 ){
+        if( poradie == 0 ){
         	myprintf_("No devices\r\n");
         }
 }

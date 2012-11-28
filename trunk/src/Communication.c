@@ -6,20 +6,21 @@
 */
 #include "Communication.h"
 
-#define HELP_STRING "temp\tActual temperature(Read only)\r\n" \
-					"heating\tHeating state(Read only)\r\n" \
-					"set temp\tDesired temperature\r\n" \
-					"hyst\tTermostat hysteresis\r\n" \
-					"thermometer\tNumber of selected thermometer from list\r\n" \
-					"switch\tNumber of selected switch from list\r\n" \
-					"list devices\tPrints all devices at one wire bus\r\n" \
-					"list switches\tPrints all switches at one wire bus\r\n" \
-					"list thermo\tPrints all thermometers at one wire bus\r\n" \
-					"display\tPeriodically refreshed termostat display\r\n" \
-					"variables\tPeriodically prints termostat variables \r\n" \
-					"defaults\tDefault settings(Not implemented yet)\r\n" \
-					"help\tDisplays this stuff\r\n" \
-					"ver\tVersion info\r\n"
+#define HELP_STRING "temp		Actual temperature(Read only)\r\n" \
+					"heating		Heating state(Read only)\r\n" \
+					"set temp	Desired temperature\r\n" \
+					"hyst		Termostat hysteresis\r\n" \
+					"thermometer	Number of selected thermometer from list\r\n" \
+					"switch		Number of selected switch from list\r\n" \
+					"list devices	Prints all devices at one wire bus\r\n" \
+					"list switches	Prints all switches at one wire bus\r\n" \
+					"list thermo	Prints all thermometers at one wire bus\r\n" \
+					"display		Periodically refreshed termostat display\r\n" \
+					"variables	Periodically prints termostat variables \r\n" \
+					"defaults	Default settings(Not implemented yet)\r\n" \
+					"help		Displays this stuff\r\n" \
+					"rescan		Starts searching for 1-wire devices\r\n"\
+					"ver		Version info\r\n"
 
 
 #define VERSION_STRING "Thermostat V1.0\r\n" \
@@ -97,6 +98,11 @@ char *print_integer(signed int n)
 
 char* print_float( float value, int precision){
 	static char buffer[64];
+	if( value != value ){
+		strcpy(buffer,"NaN\0");
+		return buffer;
+	}
+
 	char *pom;
 	int celaCast = (int)value;
 	int desatinnaCast = (int)((value-celaCast) * pow(10, precision));
@@ -173,36 +179,22 @@ void Communicate(unsigned char znak)
 
 	buffer[i] = (char) znak;
 	PutcUART2(znak);//echo
-	/*if(buffer[i]=='\n')
+	if(buffer[i]=='\b')
 	{
-		i = 0; // LF ignoruje, prikaz berie len z CR
+		if( i>0 ){
+			buffer[i-1]=0;
+			i--;
+			myprintf_(" \b");	// kvoli putty
+			return;
+		}
 	}
-	else*/ if(buffer[i]=='\r')
+	else if(buffer[i]=='\r')
 	{
 		PutcUART2('\n');
 		buffer[i] = '\0';
 		char* space;
 		space = strchr(buffer,'=');
 
-		/*if(StartsWith(buffer,"man",3))
-		{
-			static int ManualnyRezim;
-			if(space != NULL){//set
-				if(*(space+1) == '1'){
-					ManualnyRezim = 1;
-				}else if(*(space+1) == '0')	{
-					ManualnyRezim = 0;
-				}else{
-					printInvalidParameter();
-				}
-			}
-			myprintf_("Manual ");
-			if(ManualnyRezim){
-				myprintf_("ON\r\n");
-			}else{
-				myprintf_("OFF\r\n");
-			}
-		}else*/
 		if(StartsWith(buffer,"set temp")){
 			if(space != NULL){//set
 				pomf = atof(space+1);
@@ -247,6 +239,8 @@ void Communicate(unsigned char znak)
 					printInvalidParameter();
 					print_avail_devices(DS18B20_FAMILY_CODE);
 				}else{
+					OW_address selected_switch_address = poradie2address( DS2405_FAMILY_CODE, selected_switch );
+					ds2405_set_bit( selected_switch_address.bytes, 0 );
 					selected_thermo = pomi;
 				}
 			}
@@ -263,6 +257,12 @@ void Communicate(unsigned char znak)
 				}
 			}
 			myprintf("switch=%i\r\n", selected_switch);
+		}else
+		if(StartsWith(buffer,"rescan")){
+			rescan();
+
+			print_avail_devices(DS18B20_FAMILY_CODE);
+			print_avail_devices(DS2405_FAMILY_CODE);
 		}else
 		if(StartsWith(buffer,"display")){
 			var_print_display = 1;
@@ -290,7 +290,7 @@ void Communicate(unsigned char znak)
 			myprintf_(VERSION_STRING);
 		}
 		else{
-			myprintf_("Unknown command\r\n");
+			myprintf("Unknown command \"%s\"\r\n",buffer);
 		}
 		i = 0;
 	}else{//nie je koniec

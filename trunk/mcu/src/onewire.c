@@ -22,9 +22,9 @@ OW_InitTypeDef OW_settings;
 #define sei() asm volatile("cpsie i");
 
 // s optimalizaciou
-//#define _delay_us(x) delay_us((long)((x-1.4)*2))
+#define _delay_us(x) delay_us((long)((x-1.4)*2))
 //bez optimalizacie
-#define _delay_us(x) delay_us((long)((x-4.6)/1.376))
+//#define _delay_us(x) delay_us((long)((x-4.6)/1.376))
 
 void OW_Config(OW_InitTypeDef OWx){
 	assert_param(IS_GPIO_PIN_SOURCE(OWx.Pin));
