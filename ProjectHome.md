@@ -1,0 +1,1 @@
+STM32L Discovery + DS18B20 thermometer over 1-wire protocol
